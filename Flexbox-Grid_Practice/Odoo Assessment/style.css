@@ -1,0 +1,16 @@
+.dashboard {
+    display: flex;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue
+
+}
+.box {
+    border: 2px solid red;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
