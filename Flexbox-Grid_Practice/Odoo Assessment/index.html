@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <script src = "random.js"></script>
+    <title>Dashboard</title> 
+    <link rel ="stylesheet" href= "style.css">
+    <script src="random.js"></script> 
+
 
 </head>
-<body onLoad ="javascript:height()">
 
-      <div class="dashboard">
+<!--
+ondrag= "javascript:setUpDrag(box1)"
+ondrag= "javascript:setUpDrag(box2)"
+ondrag= "javascript:setUpDrag(box3)"
+ondragstart= "javascript:setUpDrag(box1)"
+ondragstart= "javascript:setUpDrag(box2)"
+ondragstart= "javascript:setUpDrag(box3)"
+ondragend="javascript:createDropBuffer(box2 || box3)"
+ondragend="javascript:createDropBuffer(box1 || box3)"
+ondragend="javascript:createDropBuffer(box1 || box2) "
+-->
 
-        <!--Grid Item 1-->
-        <div id="box1" class="box" >
+<body 
+onload="javascript:height()"
+>
+
+    <div class ="dashboard" >
+        <!-- Grid item 1-->
+        <div element = "box1" class = "box" id = "box1" draggable="true">
             <h1>A</h1>
         </div>
 
-         <!--Grid Item 2-->
-         <div id="box2" class="box">
+         <!-- Grid item 2-->
+        <div element = "box2" class = "box" id = "box2" draggable="true">
             <h1>B</h1>
         </div>
 
-         <!--Grid Item 3-->
-         <div id="box3" class="box">
+         <!-- Grid item 3-->
+         <div element = "box3" class = "box" id = "box3"  draggable="true">
             <h1>C</h1>
         </div>
 
-
     </div>
-    
 
 </body>
 </html>
