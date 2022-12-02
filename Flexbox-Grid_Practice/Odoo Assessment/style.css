@@ -4,13 +4,20 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    border: 2px solid blue
+   /border: 2px solid blue
 
 }
-.box {
-    border: 2px solid red;
+.container {
+    /*border: 2px solid red;*/
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100px;
+    border: 2px solid purple;
 }
