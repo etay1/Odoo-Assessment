@@ -17,7 +17,7 @@ containers.forEach(container => {
         e.preventDefault()
         const afterElement = getDragAfterElement(container, e.clientY)
         //console.log(afterElement)
-         //console.log("drag over")
+        //console.log("drag over")
         const draggable = document.querySelector('.dragging')
         if (afterElement == null) {
             container.appendChild(draggable)
