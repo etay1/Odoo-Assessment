@@ -1,0 +1,27 @@
+.dashboard {
+    display: flex;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue
+
+}
+.container {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid blue;
+
+}
+
+.draggable {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: .5;
+}
