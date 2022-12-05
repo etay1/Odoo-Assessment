@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title> 
-    <link rel ="stylesheet" href= "style.css">
-    <script src="random.js"></script>
-    <script src="dragNdrop.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="random.js" defer></script>
+  <script src="script.js" defer></script>
 
 </head>
-
-<body 
-onload=height()
+<body
+onload = height()
 >
-
-
-    <div class ="dashboard" draggable = "true" dropzone="true">
-        <!-- Grid item 1-->
-        <div class = "container" draggable="true" dropzone="true">
-            <div id = "box1" class = "box" draggable="true" dropzone="true"><h1>A</h1></div>
-            <div id = "box2" class = "box" draggable="true" dropzone="true"><h1>B</h1></div>
-            <div id = "box3" class = "box" draggable="true" dropzone="true"><h1>C</h1></div> 
-        </div>
-
-         <!-- Grid item 2-->
-        <div class = "container" dropzone="true">
-        <div id = "box4" class = "box" draggable="true" dropzone="true"><h1>A</h1></div>
-        <div id = "box5" class = "box" draggable="true" dropzone="true"><h1>B</h1></div>
-        <div id = "box6" class = "box" draggable="true" dropzone="true"><h1>C</h1></div>
-
-        </div>
-
-         <!-- Grid item 3-->
-         <div class = "container" dropzone="true">
-            <div id = "box7" class = "box" draggable="true" dropzone="true"><h1>A</h1></div>
-            <div id = "box8" class = "box" draggable="true" dropzone="true"><h1>B</h1></div>
-            <div id = "box9" class = "box" draggable="true" dropzone="true"><h1>C</h1></div>
-        </div>
+  <div class="dashboard">
+    <div class="container">
+      <p class="draggable" draggable="true" id = "box1">A</p>
+      <p class="draggable" draggable="true" id = "box2">B</p>
+      <p class="draggable" draggable="true" id = "box3">C</p>
 
     </div>
 
-    <script src = "dragNdrop.js"></script>
+    <div class="container">
+      <p class="draggable" draggable="true" id = "box4">A</p>
+      <p class="draggable" draggable="true" id = "box5">B</p>
+      <p class="draggable" draggable="true" id = "box6">C</p>
 
+    </div>
+
+    <div class="container">
+      <p class="draggable" draggable="true" id = "box7">A</p>
+      <p class="draggable" draggable="true" id = "box8">B</p>
+      <p class="draggable" draggable="true" id = "box9">C</p>
+    </div>
+
+</div>
 </body>
 </html>
