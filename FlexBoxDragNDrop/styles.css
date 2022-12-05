@@ -5,20 +5,24 @@
     justify-content: center;
     align-items: center;
     border: 1px solid blue
-
 }
+
 .container {
     background-color: #333;
-    padding: 1rem;
-    margin-top: 1rem;
     border: 1px solid blue;
-
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: 100px;
 }
 
 .draggable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
+    margin: .5rem;
     background-color: white;
-    border: 1px solid black;
     cursor: move;
 }
 
