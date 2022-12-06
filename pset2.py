@@ -1,30 +1,26 @@
 def permutation(lst):
-    # If lst is empty then there are no permutations
+    # base cases
     if len(lst) == 0:
         return []
 
-    # If there is only one element in lst then, only
-    # one permutation is possible
     if len(lst) == 1:
         return [lst]
 
-    # Find the permutations for lst if there are
-    # more than 1 characters
+    # n>1 cases
+    l = []  # let l be an empty list
 
-    l = []  # empty list that will store current permutation
-
-    # Iterate the input(lst) and calculate the permutation
+    #iterate through the lst and calc permutation
     for i in range(len(lst)):
-        m = lst[i]
+        j = lst[i]
 
-        # Extract lst[i] or m from the list.  remLst is
-        # remaining list
-        remLst = lst[:i] + lst[i + 1:]
 
-        # Generating all permutations where m is first
-        # element
-        for p in permutation(remLst):
-            l.append([m] + p)
+        #extract ls[i] and let it b j
+        #remList = remaning list
+        remList = lst[:i] + lst[i + 1:]
+
+        # all permutations where  j is the first ele
+        for p in permutation(remList):
+            l.append([j] + p)
     return l
 
 
